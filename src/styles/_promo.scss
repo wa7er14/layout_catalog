@@ -1,13 +1,14 @@
 .promo {
   margin-top: 50px;
-  padding-bottom: 78px;
+  padding: 0 40px 78px;
+  
   &__content {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-gap: 50px 48px;
+    grid-template-columns: repeat(auto-fill, minmax(200px, auto));
   }
 
-  &__card:not(:nth-child(-n + 4)) {
-    margin-top: 50px;
+  &__card {
+    justify-self: center;
   }
 }
